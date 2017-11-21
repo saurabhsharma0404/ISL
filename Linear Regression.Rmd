@@ -49,6 +49,7 @@ predict(lm.fit,data.frame(lstat=(c(5,10,15))),interval="confidence")
 
 ```{r}
 predict(lm.fit,data.frame(lstat=(c(5,10,15))),interval="prediction")
+<<<<<<< HEAD
 ```
 
 ###
@@ -61,4 +62,6 @@ y = abline(lm.fit)
 
 ```{r}
 s
+=======
+>>>>>>> 6c8923c51a08a64d3d5c84851c6309c02f2a2efd
 ```
