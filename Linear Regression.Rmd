@@ -52,16 +52,78 @@ predict(lm.fit,data.frame(lstat=(c(5,10,15))),interval="prediction")
 <<<<<<< HEAD
 ```
 
-###
+###run chunk not fix error
 
 ```{r}
 plot(lstat,medv)
-y = abline(lm.fit)
+y = abline(lm.fit,lwd=3,col='red')
 ```
 
 
 ```{r}
-s
-=======
->>>>>>> 6c8923c51a08a64d3d5c84851c6309c02f2a2efd
+plot(lstat,medv,col="red")
+plot(lstat,medv,pch=20)
+plot(lstat,medv,pch="+")
+plot(1:20,1:20,pch=1:20)
+```
+
+###separate panels
+
+```{r}
+par(mfrow=c(2,2))
+plot(lm.fit)
+```
+
+###compute residuals and return studentized residuals
+
+```{r}
+plot(predict(lm.fit), residuals(lm.fit))
+plot(predict(lm.fit), rstudent(lm.fit))
+```
+
+###compute leverage statistics and identifying largest element in the vector
+```{r}
+plot(hatvalues(lm.fit))
+which.max(hatvalues(lm.fit))
+```
+
+### multiple linear regression
+
+```{r}
+lm.fit =lm(medv~lstat+age,data = Boston)
+summary(lm.fit)
+```
+
+##all predictors
+
+```{r}
+lm.fit =lm(medv~.,data = Boston)
+summary(lm.fit)
+```
+
+### summarizing LM fits R squared and RSE
+```{r}
+?summary.lm
+summary(lm.fit)$r.sq
+summary(lm.fit)$sigma
+```
+
+###install car package
+```{r}
+library(car)
+vif(lm.fit)
+```
+
+###exclude age predictor because of high p value
+```{r}
+lm.fit1 = lm(medv~.-age,data = Boston)
+summary(lm.fit1)
+```
+
+```{r}
+lm.fit1 = update(lm.fit, ~.-age)
+```
+
+```{r}
+
 ```
