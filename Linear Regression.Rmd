@@ -46,3 +46,7 @@ confint(lm.fit)
 ```{r}
 predict(lm.fit,data.frame(lstat=(c(5,10,15))),interval="confidence")
 ```
+
+```{r}
+predict(lm.fit,data.frame(lstat=(c(5,10,15))),interval="prediction")
+```
