@@ -124,6 +124,17 @@ summary(lm.fit1)
 lm.fit1 = update(lm.fit, ~.-age)
 ```
 
-```{r}
+###interaction terms
 
+```{r}
+summary(lm(medv~lstat*age,data = Boston))
 ```
+
+### non linear transformation of predictor variable
+
+```{r}
+lm.fit2 = lm(medv~lstat+I(lstat^2), data = Boston)
+summary(lm.fit2)
+```
+
+##use anova
