@@ -183,7 +183,14 @@ contrasts(ShelveLoc)
 
 ### conceptual exercises
 
-###1
+###Problem 1
+
+
+```{r}
+The null hypothesis states that TV, radio, or newspaper have no affect on sales. Based on the p-values it can be inferred that TV and radio are associated with increase or decrease in sales. P-value of newspaper tells a different story altogether. It does not affect sales. 
+```
+
+### Problem 2
 
 ```{r}
 
