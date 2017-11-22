@@ -137,4 +137,54 @@ lm.fit2 = lm(medv~lstat+I(lstat^2), data = Boston)
 summary(lm.fit2)
 ```
 
-##use anova
+##use anova (model 2 is better)
+
+```{r}
+lm.fit=lm(medv~lstat,data = Boston)
+anova(lm.fit,lm.fit2)
+```
+
+```{r}
+par(mfrow=c(2,2))
+plot(lm.fit2)
+```
+
+###high order fit using poly...also better model  fit 
+
+```{r}
+lm.fit5=lm(medv~poly(lstat,5),data = Boston)
+summary(lm.fit5)
+```
+
+### log transformation
+
+```{r}
+summary(lm(medv~log(rm),data = Boston))
+```
+
+###carseats
+
+```{r}
+data(Carseats)
+fix(Carseats)
+names(Carseats)
+```
+
+```{r}
+lm.fit=lm(Sales~.+Income:Advertising+Price:Age,data = Carseats)
+summary(lm.fit)
+```
+
+```{r}
+attach(Carseats)
+contrasts(ShelveLoc)
+?contrasts
+```
+
+### conceptual exercises
+
+###1
+
+```{r}
+
+```
