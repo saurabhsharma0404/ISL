@@ -199,10 +199,6 @@ One of the biggest difference between KNN classifier and KNN regression is that 
 ### Problem 3
 
 ```{r}
-a.) Our Least square equation is represented by:
-      $\widehat{\alpha}$
-```
-
-```{r}
-$\widehat{\alpha}$ = 
+###a.) Our Least square equation is represented by:
+      expression(paste("y_hat =" + "beta"["0""]))
 ```
