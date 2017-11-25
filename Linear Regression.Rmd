@@ -193,5 +193,16 @@ The null hypothesis states that TV, radio, or newspaper have no affect on sales.
 ### Problem 2
 
 ```{r}
+One of the biggest difference between KNN classifier and KNN regression is that the former is used to determine a categorical or a qualitative response as compared to a quantitative response acheived by KNN regression methods. 
+```
 
+### Problem 3
+
+```{r}
+a.) Our Least square equation is represented by:
+      $\widehat{\alpha}$
+```
+
+```{r}
+$\widehat{\alpha}$ = 
 ```
