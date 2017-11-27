@@ -199,7 +199,28 @@ One of the biggest difference between KNN classifier and KNN regression is that 
 ### Problem 3
 
 
-###a.) Our Least square equation is represented by:
+###a.) Least square equation is represented by:
   \[  
     y_hat = {\beta_0} + {\beta_1} * X1 + {\beta_2} * X2 + {\beta_3} * X3 + {\beta_4} * X4 + {\beta_5} * X5
   \]
+
+```{r}
+with Gender male encoded as 0, iii is true. 
+```
+
+###b.)
+```{r}
+  Plugging 110 as IQ and 4.0 as GPA, we get $137100
+```
+
+###c.)
+```{r}
+False. The coefficient of the interaction term is not enough to come to a conclusion. It is important to evaluate the P-value of the interaction term. In other words, the p-value(small) indicates that the alternate Hypothesis is true i.e coefficient related to the interaction term is not equal to zero. --Page 88
+```
+
+### Problem 4
+
+###a.)
+```{r}
+The training RSS for cubic regression would be lower, as expected, compared to RSS for linear regression. However, the test RSS will be higher for cubic regression. 
+```
