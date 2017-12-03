@@ -222,5 +222,26 @@ False. The coefficient of the interaction term is not enough to come to a conclu
 
 ###a.)
 ```{r}
-The training RSS for cubic regression would be lower, as expected, compared to RSS for linear regression. However, the test RSS will be higher for cubic regression. 
+The training RSS for cubic regression would be lower, as expected, compared to RSS for linear regression.  
+```
+
+###b.)
+```{r}
+The test RSS will be higher for cubic regression. 
+```
+
+###c.)
+```{r}
+RSS for Cubic regression will be lower if we that the relationship between X and Y is not linear. The polynomial regression model will follow the data points more closely and therefore reduce the train RSS. 
+```
+
+###d.)
+```{r}
+Given information is not enough to determine if test RSS will be lower or higher for cubic regression. 
+```
+
+### Problem 5
+
+```{r}
+$\hat{\y}
 ```
